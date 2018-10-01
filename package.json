@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-express-graphql-mongoclient-api",
+  "version": "1.0.0",
+  "description": "Starter pack: (backend API) made in NodeJS + Express + GraphQL using MongoClient (MongoDB)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+  },
+  "author": "Jakub Michal Zawada @FeedYourWeb.com",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "fs": "0.0.1-security",
+    "graphql": "^0.13.2",
+    "handlebars": "^4.0.11",
+    "log": "^1.4.0",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "benchmark": "^2.1.4",
+    "chai": "^4.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.7"
+  },
+  "keywords": [
+    "facturas",
+    "node",
+    "express",
+    "mongo",
+    "react"
+  ]
+}
