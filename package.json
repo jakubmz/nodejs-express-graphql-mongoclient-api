@@ -31,9 +31,10 @@
     "mongoose": "^5.2.7"
   },
   "keywords": [
-    "facturas",
     "node",
     "express",
+    "graphql",
+    "api",
     "mongo",
     "react"
   ]

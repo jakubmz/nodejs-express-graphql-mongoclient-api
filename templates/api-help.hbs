@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-ES" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta name="title" content="{{title}}"/>
+    <meta name="description" content="{{title}}"/>
+    <title>{{title}}</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <style>
+    body { margin:0; padding:0; font-family:helvetica; }
+    h1 { margin:0; padding:1em; background:#333; color:#fff; }
+    h2 { margin:0; padding:1em; background:#eee; }
+    pre { padding:3em; }
+    </style>
+  </head>
+<body>
+  <h1>{{title}}</h1>
+  <h2>Queries & Mutations</h2>
+  <pre>
+query personGet ($personFilter: String) {
+  personGet: personGet (input: $personFilter) {
+    _id
+    code
+    name
+    taxNumber
+    address
+    email
+    phone
+    created
+    updated
+  }
+}
+mutation personInsert ($personInsertInput: PersonInsertInput!){
+  personInsert: personInsert(input: $personInsertInput) {
+    code
+    name
+    taxNumber
+    address
+    email
+    phone
+  }
+}
+mutation personUpdate ($personUpdateInput: PersonUpdateInput!){
+  personUpdate: personUpdate(input: $personUpdateInput) {
+    _id
+    code
+    name
+    taxNumber
+    address
+    email
+    phone
+    created
+  }
+}
+
+  </pre>
+  <h2>Query variables</h2>
+  <pre>
+{
+  "personFilter": "",
+  "personInsertInput": {
+    "code": "MANUGALV",
+    "name": "Juan Manuel Galvez",
+    "taxNumber": "J14456967F",
+    "address": "Calle Sol 1, Madrid, 33060, Madrid"
+  },
+  "personUpdateInput": {
+    "_id": "5b7031649ca5043d361df07b",
+    "code": "GENOVEFASANCH",
+    "name": "Genovefa Rodriguez Calvo",
+    "taxNumber": "A1114567X",
+    "address": "Calle Panizo 34, Madrid, 38630, Madrid"
+  }
+}
+
+  </pre>
+</body>
+</html>
