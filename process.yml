@@ -1,6 +1,6 @@
 apps:
   - script: npm start
-    name: nodejs-express-graphql-mongoclient-api
+    name: Starter pack nodejs-express-graphql-mongoclient-api
     watch: true
     #instances: 1
     #exec_mode: cluster
